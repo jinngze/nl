@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">0222</string>
+    <string name="open_drawer">开启</string>
+    <string name="close_drawer">关闭</string>
+</resources>

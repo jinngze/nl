@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="fragment.RecommendFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+
+        <com.recker.flybanner.FlyBanner
+            android:id="@+id/flybanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="50dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="热销新品"
+                android:textColor="#ff7f57"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp" />
+        </RelativeLayout>
+
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/hot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

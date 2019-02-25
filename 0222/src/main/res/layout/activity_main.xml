@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <!--
+    内容布局
+    菜单布局： layout_gravity
+     -->
+
+    <!--
+        match_parent 根据父布局适应
+         wrap_content 根据内容适应
+      -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/bottom_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="1dp"
+            />
+
+        <!-- app:tabTextAppearance="" -->
+
+  <android.support.v4.view.ViewPager
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_indicator"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff" />
+
+</android.support.v4.widget.DrawerLayout>
